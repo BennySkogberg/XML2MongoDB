@@ -1,0 +1,24 @@
+{
+  "name": "xml2mongodb",
+  "version": "1.0.0",
+  "description": "Convert XML file to import to MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BennySkogberg/XML2MongoDB.git"
+  },
+  "keywords": [
+    "XML",
+    "MongoDB",
+    "Import"
+  ],
+  "author": "Benny Skogberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BennySkogberg/XML2MongoDB/issues"
+  },
+  "homepage": "https://github.com/BennySkogberg/XML2MongoDB#readme"
+}
