@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/BennySkogberg/XML2MongoDB/issues"
   },
-  "homepage": "https://github.com/BennySkogberg/XML2MongoDB#readme"
+  "homepage": "https://github.com/BennySkogberg/XML2MongoDB#readme",
+  "dependencies": {
+    "mongodb": "^3.0.6"
+  }
 }
