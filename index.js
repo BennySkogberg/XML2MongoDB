@@ -15,7 +15,25 @@ server.listen(port, hostname, () => {
 })
 
 // Connect to the db
-MongoClient.connect('mongodb://localhost:27017/Livsmedel', function (error, db) {
+MongoClient.connect('mongodb://localhost:27017', (error, client) => {
   if (error) throw error
-  // Write databse Insert/Update/Query code here..
+
+  var db = client.db('foodData')
+
+  db.collection('foodData', function (error, collection) {
+    if (error) throw error
+
+    collection.insert({
+      id: 1,
+      Namn: 'Talg nöt',
+      ViktGram: 100,
+      kcal: 656.3
+    })
+
+    db.collection('foodData').count(function (err, count) {
+      if (err) throw err
+
+      console.log('foodData: ' + count)
+    })
+  })
 })
