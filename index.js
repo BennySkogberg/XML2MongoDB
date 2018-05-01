@@ -94,8 +94,9 @@ fs.readFile('./food_data/20170101.xml', function (error, data) {
           // console.log('foodItems: ' + count)
         })
 
-        console.log(namn + ' tillagd i mongoDB')
+        // console.log('Tillagd i mongoDB: ' + namn)
       }
+      console.log('*** Finished import to database, exit by [ctrl] + C ***')
     })
   })
 })
