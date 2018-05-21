@@ -4,7 +4,8 @@
   "description": "Convert XML file to import to MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node query.js"
   },
   "repository": {
     "type": "git",

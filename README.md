@@ -1,15 +1,22 @@
 # XML2MongoDB
 Convert XML and import to MongoDB
 
-# Download Food Data
-Download food data from https://www.livsmedelsverket.se/om-oss/psidata/livsmedelsdatabasen and specify YYYYMMDD as 20170101
-http://www7.slv.se/apilivsmedel/LivsmedelService.svc/Livsmedel/Naringsvarde/<YYYYMMDD>. Save the file 20170101.xml in folder food_data.
+## Download Food Data
+Download food data from [Livsmedelsdatabasen](https://www.livsmedelsverket.se/om-oss/psidata/livsmedelsdatabasen) and specify YYYYMMDD as 20180521
+[http://www7.slv.se/apilivsmedel/LivsmedelService.svc/Livsmedel/Naringsvarde/<YYYYMMDD>](http://www7.slv.se/apilivsmedel/LivsmedelService.svc/Livsmedel/Naringsvarde/20180521). Save the file 20180521.xml in folder food_data.
 
-# Download dependencies
+## Download dependencies
+...
 npm install
+...
 
-# Start MongoDB
+## Start MongoDB
 on localhost:27017
 
-# Start import
+## Start import
+...
 npm test
+...
+
+## References
+ - [How to use MongoDB with promises in Node.js?](https://stackoverflow.com/questions/37911838/how-to-use-mongodb-with-promises-in-node-js)

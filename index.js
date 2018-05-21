@@ -6,10 +6,11 @@ fs.readFile('./food_data/20170101.xml', function (error, data) {
   if (error) throw error
   var json = Parser.toJson(data)
   var myJson = JSON.parse(json)
+  var dbUrl = 'mongodb://localhost:27017'
   // console.log(myJson.LivsmedelDataset.LivsmedelsLista.Livsmedel.Namn)
 
   // Connect to the db
-  MongoClient.connect('mongodb://localhost:27017', (error, client) => {
+  MongoClient.connect(dbUrl, (error, client) => {
     if (error) throw error
 
     var db = client.db('foodData')
@@ -98,5 +99,13 @@ fs.readFile('./food_data/20170101.xml', function (error, data) {
       }
       console.log('Finished import to database, exit by [ctrl] + C')
     })
+    /*
+      .then(function (db) {
+        console.log(db)
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+    */
   })
 })
