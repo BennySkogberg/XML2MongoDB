@@ -20,17 +20,26 @@ MongoClient.connect(url)
       if (error) throw error
 
       // The users search string. Beware of capitaization.
-      var searchstring = 'fett'
+      var searchstring = 'fett 34'
 
       // Make the searchstring into a wildcard search working in MongoDB
       var searchFor = new RegExp(RegExp.quote(searchstring), 'g')
 
       // Find all items containing searchstring stored as a RegExp in variable searchFor
+      // and return the items as a single entity (to be used in a response)
+      collection.find({ Namn: searchFor }).toArray(function (error, docs) {
+        if (error) throw error
+        console.log(docs)
+        console.log('Done with array')
+      })
+
+      // You'll have the same response using forEach statement, but it's slower
       var fooditem = collection.find({ Namn: searchFor })
 
       // console.log all items containing searchstring
       fooditem.forEach(function (item) {
         console.log(item.Namn)
+        console.log('Done with item')
       })
     })
   })
