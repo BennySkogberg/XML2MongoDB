@@ -19,4 +19,5 @@ npm test
 ...
 
 ## References
- - [How to use MongoDB with promises in Node.js?](https://stackoverflow.com/questions/37911838/how-to-use-mongodb-with-promises-in-node-js)
+ - [How to use MongoDB with promises in Node.js?](https://stackoverflow.com/questions/37911838/how-to-use-mongodb-with-promises-in-node-js) 
+ - [How do you use a variable in a regular expression?](https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression) 
