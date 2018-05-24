@@ -20,7 +20,7 @@ MongoClient.connect(url)
       if (error) throw error
 
       // The users search string. Beware of capitaization.
-      var searchstring = '.'
+      var searchstring = 'fett'
 
       // Make the searchstring into a wildcard search working in MongoDB
       var searchFor = new RegExp(RegExp.quote(searchstring), 'g')
